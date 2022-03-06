@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <h1>s p l i t t e r</h1>
+
+  <div class="splitter-box">
+
+    <div class="box-one">
+
+      <div class="bill-info-box">
+        <p class="info">Bill</p>
+        <p class="error bill-error"></p>
+      </div>
+      <input type="number" class="input bill">
+
+      <div class="tip-info-box">
+        <p class="info">Select Tip %</p>
+        <p class="error tip-error"></p>
+      </div>
+      <div class="buttons-wrapper">
+        <button class="tip-btn">5%</button>
+        <button class="tip-btn">10%</button>
+        <button class="tip-btn">15%</button>
+        <button class="tip-btn">25%</button>
+        <button class="tip-btn">50%</button>
+        <input type="number" placeholder="Custom" class="custom-tip">
+      </div>
+
+      <div class="people-info-box">
+        <p class="info">Number of People</p>
+        <p class="error people-error"></p>
+      </div>
+      <input type="number" class="input people">
+
+    </div>
+
+    <div class="box-two">
+      <div class="tip-amount-box">
+        <div class="box-left">
+          <p class="title">Tip Amount</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="box-right">
+          <span class="tip-amount">$0.00</span>
+        </div>
+      </div>
+      <div class="total-amount-box">
+        <div class="box-left">
+          <p class="title">Total</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="box-right">
+          <span class="total-amount">$0.00</span>
+        </div>
+      </div>
+      <div class="btn-box">
+        <button class="count-btn">count</button>
+        <button class="reset-btn">reset</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
