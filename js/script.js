@@ -1,7 +1,6 @@
 const bill = document.querySelector('.bill')
 const people = document.querySelector('.people')
 const tipBtns = document.querySelectorAll('.tip-btn')
-const customTip = document.querySelector('.custom-tip')
 
 const errorParagraphs = document.querySelectorAll('.error')
 const billError = document.querySelector('.bill-error')
@@ -16,9 +15,6 @@ const resetBtn = document.querySelector('.reset-btn')
 
 let tipPercentage = 0
 
-// // customTip - value
-// console.log(parseInt(customTip.value));
-
 const activeTip = (e) => {
 	if (e.target.classList.contains('tip-btn')) {
 		tipBtns.forEach((btn) => btn.classList.remove('active'))
@@ -30,8 +26,6 @@ const activeTip = (e) => {
 		let tipBtn = document.querySelector('.active')
 		tipPercentage = parseFloat(tipBtn.textContent.slice(0, -1)) / 100
 	}
-
-	// getCustomTip();
 }
 
 const checkForm = () => {
@@ -74,7 +68,6 @@ const count = () => {
 const reset = () => {
 	bill.value = ''
 	people.value = ''
-	customTip.value = ''
 	tipPercentage = 0
 
 	tipBtns.forEach((btn) => {
